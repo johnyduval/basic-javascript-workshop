@@ -74,6 +74,8 @@ function repeat (string, number){
 repeat("Montreal", 5);
 repeat("Canada", 10);
 
+// Created a function that reverses the letter compotion of the string it takes
+
 function reverse (string){
 	for(var i = string.length; i >=  0; i--){
 		return string[i];
@@ -83,3 +85,17 @@ function reverse (string){
 reverse("Hello");
 reverse("");
 reverse("Javasript");
+
+
+// A function that returns the factorial of a number
+
+function factorial (number){
+        
+    if (number !== 0 && number !== 1){
+                return (number * factorial(number-1));
+        } else {
+                return 1;
+        }
+}
+
+factorial(10);
