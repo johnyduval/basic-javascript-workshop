@@ -36,3 +36,12 @@ function addNumbers (n1,n2){
 
 addNumbers(3,4);
 addNumbers(10,2);
+
+// Multiplies numbers
+
+function multNumbers (n1, n2){
+	return n1 * n2;
+};
+
+multNumbers(5,10);
+multNumbers(2,3);
