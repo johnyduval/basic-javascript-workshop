@@ -73,3 +73,13 @@ function repeat (string, number){
 
 repeat("Montreal", 5);
 repeat("Canada", 10);
+
+function reverse (string){
+	for(var i = string.length; i >=  0; i--){
+		return string[i];
+	}	
+};
+
+reverse("Hello");
+reverse("");
+reverse("Javasript");
