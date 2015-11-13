@@ -45,3 +45,20 @@ function multNumbers (n1, n2){
 
 multNumbers(5,10);
 multNumbers(2,3);
+
+// Creating the function calc that will return basic calculations
+
+function calc(number1, number2, string){
+	if (string === 'add'){
+		return addNumbers(number1, number2);
+	} else if (string === 'substract'){
+		return number1 - number2;
+	} else if (string === 'mult'){
+		return multNumbers(number1, number2);
+	} else if (string === 'div'){
+		return number1/number2;
+	} else {
+		return 0;
+	};
+};
+
