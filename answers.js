@@ -74,17 +74,17 @@ function repeat (string, number){
 repeat("Montreal", 5);
 repeat("Canada", 10);
 
-// Created a function that reverses the letter compotion of the string it takes
+// Created a function that reverses the letter composition of the string it takes
 
 function reverse (string){
-	for(var i = string.length; i >=  0; i--){
-		return string[i];
+	for(var i = string.length-1; i >=  0; i--){
+		return string[i].join;
 	}	
 };
 
 reverse("Hello");
 reverse("");
-reverse("Javasript");
+reverse("Javascript");
 
 
 // A function that returns the factorial of a number
@@ -99,3 +99,20 @@ function factorial (number){
 }
 
 factorial(10);
+
+// function that will return the longest word in a phrase
+
+function longestWord(string) {
+  var words = string.split(" ");
+  var longest = "";
+
+  for (var i=0; i<words.length; i++) {
+    if (words[i].length > longest.length) {
+    longest = words[i];
+    }
+   }
+    
+return longest;
+}
+
+longestWord("I am going crazy");
