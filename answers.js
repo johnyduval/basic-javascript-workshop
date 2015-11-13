@@ -62,3 +62,14 @@ function calc(number1, number2, string){
 	};
 };
 
+// Creating a function that take string and number and returns the string as many times as number parameter
+
+function repeat (string, number){
+	
+	for(var i = number; i > 0; i--){
+		return string;
+	};
+};
+
+repeat("Montreal", 5);
+repeat("Canada", 10);
