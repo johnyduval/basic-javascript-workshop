@@ -153,7 +153,16 @@ var array = [40, 2, 0, 20, "", false];
 
 var filtered = array.filter(
     function (item){
-        return !!item;
+        return item;
     }
 );
 
+// a function that takes an array of numbers, and returns the sum of all the numbers in the array
+
+function addItems (array){
+	var sum = 0;
+	for(var i = 0; i < array.length; i++){
+		sum = sum + parseInt(array[i]);
+	}
+	return sum;
+}
