@@ -146,3 +146,14 @@ function returnLargestNumber (array){
 	
 	return largest;
 }
+
+// function that takes an array, and returns a filtered array
+
+var array = [40, 2, 0, 20, "", false];
+
+var filtered = array.filter(
+    function (item){
+        return !!item;
+    }
+);
+
