@@ -124,7 +124,7 @@ function capitalizeFirstLetter(string) {
     
     function upper(letter){
         var firstLetter = letter[0];
-        return firstLetter.toUpperCase() + letter.slice(1);
+        return firstLetter.toUpperCase() + letter.slice(1).toLowerCase();
     }
     
     
@@ -133,4 +133,16 @@ function capitalizeFirstLetter(string) {
 
 capitalizeFirstLetter("is it working well?");
 
-// incomplete
+// a function that takes an array and returns the largest number of the array
+
+function returnLargestNumber (array){
+	var largest= '';
+	
+	for (var i=0; i<array.length; i++) {
+    	if (array[i] > largest) {
+    	largest = array[i];
+    	}
+	}
+	
+	return largest;
+}
