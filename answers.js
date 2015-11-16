@@ -116,3 +116,21 @@ return longest;
 }
 
 longestWord("I am going crazy");
+
+// function will capitalize the first letter of every word
+
+function capitalizeFirstLetter(string) {
+    var words = string.split(" ");
+    
+    function upper(letter){
+        var firstLetter = letter[0];
+        return firstLetter.toUpperCase() + letter.slice(1);
+    }
+    
+    
+    return words.map(upper).join(" ");
+}
+
+capitalizeFirstLetter("is it working well?");
+
+// incomplete
