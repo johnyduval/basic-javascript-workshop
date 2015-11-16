@@ -166,3 +166,16 @@ function addItems (array){
 	}
 	return sum;
 }
+
+// a function that takes two arrays, and returns an array of all elements that are only in one array
+
+function diffArray(array1, array2){
+    
+    var uniqueArray = array1.filter(
+        function(item, pos) {
+        return array2.indexOf(item) == pos;
+        }
+    );
+    
+    return uniqueArray;
+}
